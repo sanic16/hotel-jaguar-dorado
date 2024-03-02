@@ -1,0 +1,60 @@
+.navigation{
+    margin-left: 8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40rem;
+    height: 100%;
+    padding-block: 1.6rem;
+    background: linear-gradient(to top, rgba(34, 32, 41, 1), rgba(34, 32, 41, .8)), url('../../../public/images/nav-bg.jpeg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-search{
+    position: relative;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.navigation-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.navigation-search-input{
+    width: 30rem;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, .3);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    letter-spacing: .1rem;
+    border: .1rem solid #555;
+    border-radius: 10rem;
+    transition: var(--transition-1)
+}
+
+.navigation-search-input:focus{
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.navigation-search-btn{
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    cursor: pointer;
+}

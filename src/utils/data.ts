@@ -1,3 +1,5 @@
+export const hotelName = 'Hotel El Jaguar Dorado'
+
 import { FaFacebook } from "react-icons/fa"
 import { FaTwitter } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
@@ -26,41 +28,40 @@ export const social_data = [
         url: "https://www.google.com"
     }
 ]
-// 
 
-// const navigation_data = [
-//     {
-//         id: 1,
-//         text: "Inicio",
-//         url: "#home"
-//     },
-//     {
-//         id: 2,
-//         text: "Nosotros",
-//         url: "#about"
-//     },
-//     {
-//         id: 3,
-//         text: "Habitaciones",
-//         url: "#rooms"
-//     },
-//     {
-//         id: 4,
-//         text: "Eventos",
-//         url: "#events"
-//     },
-//     {
-//         id: 5,
-//         text: "Clientes",
-//         url: "#customers"
-//     },
-//     {
-//         id: 6,
-//         text: "Contacto",
-//         url: "#contact"
-//     }
+export const navigation_data = [
+    {
+        id: 1,
+        text: "Inicio",
+        url: "#home"
+    },
+    {
+        id: 2,
+        text: "Nosotros",
+        url: "#about"
+    },
+    {
+        id: 3,
+        text: "Habitaciones",
+        url: "#rooms"
+    },
+    {
+        id: 4,
+        text: "Eventos",
+        url: "#events"
+    },
+    {
+        id: 5,
+        text: "Clientes",
+        url: "#customers"
+    },
+    {
+        id: 6,
+        text: "Contacto",
+        url: "#contact"
+    }
 
-// ]
+]
 
 // import singleRoom from '../assets/single-room.jpeg'
 // import doubleRoom from '../assets/double-room.jpeg'

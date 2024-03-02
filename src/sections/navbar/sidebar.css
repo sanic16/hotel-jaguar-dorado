@@ -4,6 +4,8 @@
     padding-block: 1.6rem; 
     background-color: var(--dark-color);
     position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -2,6 +2,7 @@ import React from 'react'
 import { social_data } from '@/utils/data'
 
 import './sidebar.css'
+import Navigation from './Navigation'
 
 const Sidebar = () => {
   return (
@@ -32,6 +33,8 @@ const Sidebar = () => {
                 </p>
             </div>
         </div>
+
+        <Navigation />
     </div>
   )
 }
