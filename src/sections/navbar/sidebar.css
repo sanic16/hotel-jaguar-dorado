@@ -2,7 +2,7 @@
     width: 8rem;
     height: 100%;
     padding-block: 1.6rem; 
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    z-index: 200;
 }
 
 .menu-icon{
@@ -19,7 +20,7 @@
 .line{
     height: .2rem;
     width: 2.5rem;
-    background-color: var(--light-fixed-color);
+    background-color: white;
     margin-bottom: .6rem;
     transition: var(--transition-2);
 }
@@ -44,14 +45,18 @@
 
 .social-link{
     font-size: 2rem;
-    color: var(--light-fixed-color);
+    color: white;
+    display: flex;
+    padding: .8rem;
+    border-radius: 50%;
 }
 
 .social-link:hover{
+    background-color: white;
     color: var(--primary-color);
 }
 
 .year{
     font-size: 1.5rem;
-    color: var(--light-fixed-color);
+    color: white;
 }

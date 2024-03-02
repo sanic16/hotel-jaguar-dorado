@@ -4,10 +4,12 @@ import { FaSearch } from 'react-icons/fa'
 
 import { navigation_data } from '@/utils/data'
 import './navigation.css'
+import useNavigationContext from '@/context/navigation-context'
 
 const Navigation = () => {
+  const { isOpen, toggle } = useNavigationContext()  
   return (
-    <div className='navigation'>
+    <div className={`navigation ${isOpen ? 'show_navbar' : null}`}>
         <div className="navigation-header">
             <h1 className='navigation-heading'>
                 {hotelName}
@@ -24,7 +26,7 @@ const Navigation = () => {
             {
                 navigation_data.map(item => (
                     <li key={item.id} className='navigation-item'>
-                        <a href={item.url} className='navigation-link'>
+                        <a href={item.url} className='navigation-link' onClick={toggle}>
                             { item.text }
                         </a>
                     </li>

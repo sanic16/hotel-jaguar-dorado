@@ -1,15 +1,18 @@
+'use client'
 import React from 'react'
 import { social_data } from '@/utils/data'
 
 import './sidebar.css'
 import Navigation from './Navigation'
+import useNavigationContext from '@/context/navigation-context'
 
 const Sidebar = () => {
+  const { isOpen, toggle } = useNavigationContext()  
   return (
     <div className='navbar'>
         <div className='sidebar'> 
 
-            <div className='menu-icon'>
+            <div className='menu-icon' onClick={toggle}>
                 <div className="line line-1"></div>
                 <div className="line line-2"></div>
                 <div className="line line-3"></div>
@@ -34,7 +37,7 @@ const Sidebar = () => {
             </div>
         </div>
 
-        <Navigation />
+        { isOpen && <Navigation />}
     </div>
   )
 }
