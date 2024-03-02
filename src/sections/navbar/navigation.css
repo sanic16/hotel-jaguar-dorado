@@ -1,5 +1,4 @@
 .navigation{
-    margin-left: 8rem;
     position: fixed;
     top: 0;
     left: -32rem;
@@ -15,7 +14,7 @@
     z-index: 150;
 }
 .navigation.show_navbar{
-    animation: fadeIn 800ms ease-out forwards;
+    animation: fadeIn 800ms cubic-bezier(1, 0, 0, 1) forwards;
 }
 
 @keyframes fadeIn{
@@ -23,7 +22,7 @@
         left: -32rem;
     }
     to{
-        left: 0;
+        left: 8rem;
     }
 }
 

@@ -13,9 +13,9 @@ const Sidebar = () => {
         <div className='sidebar'> 
 
             <div className='menu-icon' onClick={toggle}>
-                <div className="line line-1"></div>
-                <div className="line line-2"></div>
-                <div className="line line-3"></div>
+                <div className={`line line-1 ${isOpen ? 'open' : null}`}></div>
+                <div className={`line line-2 ${isOpen ? 'open' : null}`}></div>
+                <div className={`line line-3 ${isOpen ? 'open' : null}`}></div>
             </div>
 
             <ul className="social-icons-list">
