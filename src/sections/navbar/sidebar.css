@@ -19,9 +19,9 @@
 .line{
     height: .2rem;
     width: 2.5rem;
-    background-color: var(--light-color);
+    background-color: var(--light-fixed-color);
     margin-bottom: .6rem;
-    transition: var(--transition-1);
+    transition: var(--transition-2);
 }
 
 .line-1,
@@ -44,7 +44,7 @@
 
 .social-link{
     font-size: 2rem;
-    color: var(--light-color);
+    color: var(--light-fixed-color);
 }
 
 .social-link:hover{
@@ -53,5 +53,5 @@
 
 .year{
     font-size: 1.5rem;
-    color: var(--light-color)
+    color: var(--light-fixed-color);
 }

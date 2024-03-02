@@ -58,3 +58,60 @@
     font-size: 1.7rem;
     cursor: pointer;
 }
+
+.navigation-list{
+    display: flex;
+    flex-direction: column;
+    height: 28rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-item{
+    position: relative;
+}
+
+.navigation-link{
+    color: var(--light-fixed-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.navigation-link::before,
+.navigation-link::after
+{
+    content: "";
+    width: 0rem;
+    height: .1rem;
+    background-color: var(--primary-color);
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: width 500ms cubic-bezier(1, 0, 0, 1);
+
+}
+
+.navigation-link::before{
+    left: -4rem;
+}
+.navigation-link::after{
+    right: -4rem;
+}
+
+.navigation-link:hover {
+    color: var(--primary-color);
+}
+
+.navigation-link:hover::before,
+.navigation-link:hover::after{
+    width: 3rem;
+}
+
+.copyright{
+    color: var(--light-fixed-color);
+    font-size: 1.2rem;
+}
+

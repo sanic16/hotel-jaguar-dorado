@@ -13,6 +13,7 @@
   --light-color: hsl(var(--primary-hue), 5%, var(--light-lightness));
   --dark-color: hsl(var(--primary-hue), 5%, var(--dark-lightness));
   --black-color: hsl(var(--primary-hue), 5%, var(--black-lightness));
+  --light-fixed-color: hsl(var(--primary-hue), 5%, var(--light-lightness));
 
   --container-width-lg: 80%;
   --container-width-md: 90%;
@@ -49,7 +50,7 @@ ul{
 
 a{
   text-decoration: none;
-  transition: var(--transition);
+  transition: var(--transition-2);
 }
 
 main{
