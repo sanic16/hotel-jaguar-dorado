@@ -1,0 +1,12 @@
+.header{
+    margin-left: 8rem;
+}
+
+.hotel-logo svg{
+    font-size: 10rem;
+    color: var(--primary-color);
+}
+
+.hotel-heading{
+    color: var(--primary-color);
+}

@@ -55,7 +55,7 @@ a{
 
 main{
   color: var(--dark-color);
-  --primary-color: hsl(--primary-hue, 88%, 42%)
+  --primary-color: hsl(var(--primary-hue), 88%, 42%)
 }
 
 .container{

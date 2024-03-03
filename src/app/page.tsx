@@ -1,10 +1,9 @@
-import Sidebar from '@/sections/navbar/Sidebar'
-import React from 'react'
+import Header from '@/sections/header/Header'
 
 export default function page() {
   return (
     <>
-      
+      <Header />
     </>
   )
 }
