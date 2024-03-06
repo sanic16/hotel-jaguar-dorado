@@ -2,7 +2,7 @@
     width: 8rem;
     height: 100%;
     padding-block: 1.6rem; 
-    background-color: var(--primary-color);
+    background-color: hsla(0, 5%, 10%);
     position: fixed;
     top: 0;
     left: 0;
@@ -63,10 +63,11 @@
     display: flex;
     padding: .8rem;
     border-radius: 50%;
+    border: .1rem solid transparent;
 }
 
 .social-link:hover{
-    background-color: white;
+    border-color: var(--primary-color);    
     color: var(--primary-color);
 }
 

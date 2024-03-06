@@ -5,13 +5,14 @@ import { social_data } from '@/utils/data'
 import './sidebar.css'
 import Navigation from './Navigation'
 import useNavigationContext from '@/context/navigation-context'
+import { AnimatePresence } from 'framer-motion'
+import Modal from '@/components/modal/Modal'
 
 const Sidebar = () => {
   const { isOpen, toggle } = useNavigationContext()  
   return (
     <div className='navbar'>
         <div className='sidebar'> 
-
             <div className='menu-icon' onClick={toggle}>
                 <div className={`line line-1 ${isOpen ? 'open' : null}`}></div>
                 <div className={`line line-2 ${isOpen ? 'open' : null}`}></div>
@@ -37,7 +38,10 @@ const Sidebar = () => {
             </div>
         </div>
 
-        { isOpen && <Navigation />}
+        <AnimatePresence>
+            { isOpen && <Navigation />}
+            {/* { isOpen && <Modal />} */}
+        </AnimatePresence>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { hotelName } from '@/utils/data'
 import { FaSearch } from 'react-icons/fa'
 
@@ -9,7 +10,21 @@ import useNavigationContext from '@/context/navigation-context'
 const Navigation = () => {
   const { isOpen, toggle } = useNavigationContext()  
   return (
-    <div className={`navigation ${isOpen ? 'show_navbar' : null}`}>
+    <motion.div 
+        // initial={{
+        //     left: '-32rem'
+        // }}
+        animate={{
+            left: isOpen ? '8rem' : '-32rem'
+        }}
+        exit={{
+            left: '-32rem'
+        }}
+        transition={{
+            duration: .8
+        }}
+        className={`navigation`}
+    >
         <div className="navigation-header">
             <h1 className='navigation-heading'>
                 {hotelName}
@@ -39,7 +54,7 @@ const Navigation = () => {
                 &copy; {new Date().getFullYear()} { hotelName }
             </p>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -3,7 +3,8 @@ import React, { useState, createContext, useContext } from "react";
 
 const NavigationContext = createContext({
     isOpen: false,
-    toggle: () => {}
+    toggle: () => {},
+    close: () => {}
 });
 
 export const NavigationContextProvider = (
@@ -15,11 +16,13 @@ export const NavigationContextProvider = (
 ) => {
     const [isOpen, setIsOpen] = useState(false)
     const toggle = () => setIsOpen(prevState => !prevState)
+    const close = () => setIsOpen(false)
 
     return(
         <NavigationContext.Provider value={{
             isOpen,
-            toggle
+            toggle,
+            close
         }}>
             { children }
         </NavigationContext.Provider>

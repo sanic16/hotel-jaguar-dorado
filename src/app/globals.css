@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
 
 :root{
-  --primary-hue: 25;
+  --primary-hue: 45;
   --white-lightness: 96%;
   --light-lightness: 86%;
   --dark-lightness: 20%;
   --black-lightness: 12%;
 
-  --primary-color: hsl(var(--primary-hue), 88%, 42%);
+  --primary-color: hsl(var(--primary-hue), 78%, 35%);
+  --secondary-color: hsl(var(--primary-hue), 88%, 45%);
   --white-color: hsl(var(--primary-hue), 5%, var(--white-lightness));
   --light-color: hsl(var(--primary-hue), 5%, var(--light-lightness));
   --dark-color: hsl(var(--primary-hue), 5%, var(--dark-lightness));
@@ -55,7 +56,6 @@ a{
 
 main{
   color: var(--dark-color);
-  --primary-color: hsl(var(--primary-hue), 88%, 42%)
 }
 
 .container{
