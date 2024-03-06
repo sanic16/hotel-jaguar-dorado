@@ -19,8 +19,8 @@ const AboutUs = () => {
                 { hotelName }
                 </h3>
                 <p className='aboutUs__text'>
-                    Somos un hotel de categoría úbicado en el municipio de San Miguel Petapa, Guatemala.
-                    Estamos frente al lago de Amatitlán y al parque ecológico "La Serra" lo que nos hace un lugar ideal para el descanso y la relajación.
+                    Somos un hotel de categor&iacute;a a úbicado en el municipio de San Miguel Petapa, Guatemala.
+                    Estamos frente al lago de Amatitl&aacute;n y al parque ecol&oacute;gico &quot;La Serra&quot; lo que nos hace un lugar ideal para el descanso y la relajación.
                 </p>
                 <a className='aboutUs__btn'>
                     Leer Más
