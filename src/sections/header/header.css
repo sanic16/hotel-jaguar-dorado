@@ -1,7 +1,7 @@
 .header{
     margin-left: 8rem;
     height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url('../../../public/images/header-1.jpeg') center/cover no-repeat;
+    background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url('../../../public/images/header-4.jpg') center/cover no-repeat;
 }
 
 .brand{
@@ -29,7 +29,7 @@
 
 .banner{
     color: #ddd;
-    max-height: 65rem;
+    height: 65rem;
     display: flex;
     flex-direction: column;
     align-items: center;

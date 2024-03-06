@@ -5,7 +5,7 @@
     width: 40rem;
     height: 100%;
     padding-block: 1.6rem;
-    background: linear-gradient(to top, rgba(34, 32, 41, 1), rgba(34, 32, 41, .8)), url('../../../public/images/nav-bg.jpeg') center no-repeat;
+    background: linear-gradient(to top, rgba(34, 32, 41, 1), rgba(34, 32, 41, .8)), url('../../../public/images/nav-bg-2.jpg') center no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;

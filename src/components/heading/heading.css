@@ -1,0 +1,24 @@
+.heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+.heading__small-underline{
+    width: 9rem;
+    height: .1rem;
+    background-color: var(--primary-color);
+    margin: .5rem auto 1rem auto;
+}
+
+.heading__big-underline{
+    width: 20rem;
+    height: .1rem;
+    background-color: var(--primary-color);
+    margin-inline: auto;
+    margin-bottom: 5rem;
+}
