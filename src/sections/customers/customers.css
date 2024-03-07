@@ -16,11 +16,8 @@
     place-content: center;
 }
 
-.customers__left-wrapper{
-
-}
-
 .customers__left p{
+    max-width: 60rem;
     margin-bottom: 1rem;
     font-size: 1.6rem;
     font-weight: 300;
@@ -81,10 +78,12 @@
 
 .customers__right{
     display: grid;
+    justify-content: center;
     gap: 2rem;
 }
 
 .customer{
+    max-width: 60rem;
     padding: 3rem 2rem;
     display: flex;
     align-items: flex-start;

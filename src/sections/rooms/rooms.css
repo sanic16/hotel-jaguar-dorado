@@ -7,12 +7,14 @@
    
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 5rem;
     justify-items: center;
 }
 
 .room__card{
     max-width: 60rem;
+    width: 100%;
     margin: 5rem;
     background-color: var(--dark-color);
     box-shadow: 0rem 2rem 2rem hsla(var(--primary-hue), 5%, var(--light-lightness), .3);

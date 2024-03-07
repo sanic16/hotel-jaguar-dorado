@@ -47,13 +47,13 @@ export const navigation_data = [
     },
     {
         id: 4,
-        text: "Eventos",
-        url: "#events"
+        text: "Clientes",
+        url: "#customers"
     },
     {
         id: 5,
-        text: "Clientes",
-        url: "#customers"
+        text: "Eventos",
+        url: "#events"
     },
     {
         id: 6,
@@ -151,6 +151,42 @@ export const customers_data: Customer[] = [
     }
 ];
 
+import event_image_1 from '@/../public/images/event-1.jpg'
+import event_image_2 from '@/../public/images/event-2.jpg'
+import event_image_3 from '@/../public/images/event-3.png'
+import event_image_4 from '@/../public/images/event-4.jpg'
+
+
+export const events_data = [
+    {
+        id: 1,
+        title: 'Halloween',
+        date: '31 de Octubre',
+        description: 'Celebra Halloween con nosotros y disfruta de una noche llena de diversión y sorpresas.',
+        image: event_image_1
+    },
+    {
+        id: 2,
+        title: 'Día de los Muertos',
+        date: '2 de Noviembre',
+        description: 'Ven a celebrar el Día de los Muertos con nosotros y disfruta de una noche llena de tradición y cultura.',
+        image: event_image_2
+    },
+    {
+        id: 3,
+        title: 'Boda de María y Juan',
+        date: '15 de Noviembre',
+        description: 'Los invitados a la boda de María y Juan podrán disfrutar de una noche de lujo y diversión.',
+        image: event_image_3
+    },
+    {
+        id: 4,
+        title: 'Concierto de Marimba',
+        date: '20 de Noviembre',
+        description: 'La mejor marimba de Guatemala se presentará en nuestro hotel. ¡No te lo pierdas!',
+        image: event_image_4
+    }
+]
 
 // const footer_contact = [
 //     {

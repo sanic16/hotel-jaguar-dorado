@@ -1,3 +1,4 @@
+import CardButton from "@/components/buttons/CardButton"
 import Image from "next/image"
 import { FaAngleDoubleRight, FaArrowRight } from "react-icons/fa"
 
@@ -29,9 +30,10 @@ const Room = (
             <p className="room__card-price">
                 Q { price}
             </p>
-            <button className="room__card-btn">
-                Reservar <FaAngleDoubleRight />
-            </button>
+            <CardButton>
+                Reservar
+                <FaArrowRight />
+            </CardButton>
         </div>
     </div>
   )

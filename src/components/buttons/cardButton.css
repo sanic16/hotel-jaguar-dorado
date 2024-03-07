@@ -1,0 +1,45 @@
+.card__btn{
+    cursor: pointer;
+    width: 20rem;
+    padding: 1rem .5rem;
+    background-color: transparent;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    border: .1rem solid var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border-radius: 10rem;
+}
+
+.card__btn:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: translateX(-100%);
+    transition: all 500ms;
+    z-index: -1;
+}
+
+.card__btn:hover::before{
+    transform: translateX(0);
+}
+
+.card__btn:hover{
+    color: var(--dark-color);
+}
+
+.card__btn:active svg  {
+    margin-left: 1rem;
+}
