@@ -63,41 +63,41 @@ export const navigation_data = [
 
 ]
 
-// import singleRoom from '../assets/single-room.jpeg'
-// import doubleRoom from '../assets/double-room.jpeg'
-// import lux from '../assets/lux.jpeg'
-// import vip from '../assets/vip.jpeg'
+import singleRoom from '../../public/images/single-room.jpeg'
+import doubleRoom from '../../public/images/double-room.jpeg'
+import lux from '../../public/images/lux.jpeg'
+import vip from '../../public/images/vip.jpeg'
 
-// const rooms_data = [
-//     {
-//         id: 1,
-//         image: singleRoom,
-//         title: 'Habitación Individual',
-//         description: 'Disfruta de una habitación individual con todas las comodidades.', 
-//         price: 799.00
-//     },
-//     {
-//         id: 2,
-//         image: doubleRoom,
-//         title: 'Habitación Doble',
-//         description: 'Disfruta de una habitación doble con todas las comodidades.',
-//         price: 999.00
-//     },
-//     {
-//         id: 3,
-//         image: lux,
-//         title: 'Habitación Premium',
-//         description: 'Disfruta de una habitación premium con todas las comodidades.',
-//         price: 1499.00
-//     },
-//     {
-//         id: 4,
-//         image: vip,
-//         title: 'Habitación VIP',
-//         description: 'Disfruta de una habitación VIP con todas las comodidades.',
-//         price: 1999.00
-//     }
-// ]
+export const rooms_data = [
+    {
+        id: 1,
+        image: singleRoom,
+        title: 'Habitación Individual',
+        description: 'Disfruta de una habitación individual con todas las comodidades.', 
+        price: 799.00
+    },
+    {
+        id: 2,
+        image: doubleRoom,
+        title: 'Habitación Doble',
+        description: 'Disfruta de una habitación doble con todas las comodidades.',
+        price: 999.00
+    },
+    {
+        id: 3,
+        image: lux,
+        title: 'Habitación Premium',
+        description: 'Disfruta de una habitación premium con todas las comodidades.',
+        price: 1499.00
+    },
+    {
+        id: 4,
+        image: vip,
+        title: 'Habitación VIP',
+        description: 'Disfruta de una habitación VIP con todas las comodidades.',
+        price: 1999.00
+    }
+]
 
 // import client1 from '../assets/customer-1.jpeg'
 // import client2 from '../assets/customer-2.jpeg'

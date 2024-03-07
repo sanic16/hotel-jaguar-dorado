@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
   --primary-hue: 45;
-  --white-lightness: 96%;
-  --light-lightness: 86%;
-  --dark-lightness: 16%;
-  --black-lightness: 8%;
+  --white-lightness: 4%;
+  --light-lightness: 20%;
+  --dark-lightness: 84%;
+  --black-lightness: 92%;
 
   --primary-color: hsl(var(--primary-hue), 78%, 35%);
   --secondary-color: hsl(var(--primary-hue), 88%, 45%);
@@ -55,6 +55,7 @@ a{
 
 img{
   width: 100%;
+  height: auto;
   display: block;
   object-fit: cover;
 }

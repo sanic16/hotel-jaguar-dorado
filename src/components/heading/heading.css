@@ -4,6 +4,7 @@
     font-weight: 300;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: .2rem;
     color: var(--primary-color);
 }
 
@@ -12,7 +13,7 @@
     width: 9rem;
     height: .1rem;
     background-color: var(--primary-color);
-    margin: .5rem auto 1rem auto;
+    margin: 1rem auto 1rem auto;
 }
 
 .heading__big-underline{
