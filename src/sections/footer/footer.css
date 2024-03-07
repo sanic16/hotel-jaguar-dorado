@@ -1,0 +1,137 @@
+.footer{
+    margin-left: 8rem;
+    background-color: var(--dark-color);
+    padding-top: 10rem;
+}
+
+.main__part{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr) 45rem;
+   place-content: center;
+   gap: 5rem;
+}
+
+.footer__heading{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--primary-color);
+    margin: 1rem 0 3rem 0;
+}
+
+.footer__list{
+   display: flex; 
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.footer__list-link{
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+.footer__contact p{
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+}
+
+.footer__form{
+    display: flex;
+}
+
+.footer__input{
+    width: 20rem;
+    padding: .6rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    color: #333;
+    outline: none;
+}
+
+.footer__btn{
+    padding: .6rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+}
+
+.footer__gallery{
+    max-width: 45rem;
+}
+
+.gallery__images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: .8rem;
+}
+
+.image__wrapper{
+    width: 12rem;
+    overflow: hidden;
+}
+
+.footer__image{
+    aspect-ratio: 5 / 3; 
+    backface-visibility: hidden;
+    transition: all 500ms;  
+}
+
+.footer__image:hover{
+    transform: scale(1.4);
+    opacity: .8;
+}
+
+.footer__creator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 2rem 0;
+    margin-top: 4rem;
+    border-top: 1px solid var(--light-color);
+}
+
+.copyright{
+    font-size: 1.3rem;
+}
+
+.creator {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.creator svg{
+    font-size: 2.2rem;
+    color: var(--primary-color);
+}
+
+.creator p a{
+    color: var(--light-color);
+    display: inline-block;
+}
+
+.creator p svg{
+    margin-inline: .3rem;
+}
+
+@media screen and (max-width: 1300px){
+    .main__part{
+        grid-template-columns: repeat(3, 1fr) 30rem;
+        gap: 2.5rem;
+    }
+    .image__wrapper{
+        width: 14rem;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .main__part{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+    .image__wrapper{
+        width: 12rem;
+    }
+   
+}
