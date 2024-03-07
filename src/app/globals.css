@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
   --primary-hue: 45;
-  --white-lightness: 4%;
-  --light-lightness: 20%;
-  --dark-lightness: 84%;
-  --black-lightness: 92%;
+  --white-lightness: 92%;
+  --light-lightness: 84%;
+  --dark-lightness: 16%;
+  --black-lightness: 8%;
 
   --primary-color: hsl(var(--primary-hue), 78%, 35%);
   --secondary-color: hsl(var(--primary-hue), 88%, 45%);
@@ -42,6 +42,7 @@ html{
 
 body{
   font-family: 'Montserrat', sans-serif;
+  color: var(--light-color);
 }
 
 ul{
@@ -61,7 +62,7 @@ img{
 }
 
 main{
-  color: var(--dark-color);
+  color: var(--light-color);
 }
 
 .container{

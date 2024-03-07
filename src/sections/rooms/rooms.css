@@ -4,10 +4,7 @@
 }
 
 .rooms__cards-wrapper{
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
+   
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));

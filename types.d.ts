@@ -6,3 +6,11 @@ type NextImage = {
     blurHeight?: number,
     blurWidth?: number,
 }
+
+type Customer = {
+    id: number,
+    image: NextImage,
+    comment: string,
+    name: string,
+    rating: number
+}

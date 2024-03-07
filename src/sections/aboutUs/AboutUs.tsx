@@ -11,7 +11,7 @@ import './aboutUs.css'
 
 const AboutUs = () => {
   return (
-    <section className='aboutUs'>
+    <section className='aboutUs' id='about'>
         <div className='container aboutUs__wrapper'>
             <div className=' aboutUs__content'>
                 <Heading title='Acerca de Nosotros' className='aboutUs__heading'/>

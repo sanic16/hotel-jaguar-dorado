@@ -8,7 +8,7 @@ import './rooms.css'
 
 const Rooms = () => {
   return (
-    <section className='rooms'>
+    <section className='rooms' id='rooms'>
         <div className='container rooms__wrapper'>
             <Heading title='Nuestras Habitaciones' />
             <div className='rooms__cards-wrapper'>

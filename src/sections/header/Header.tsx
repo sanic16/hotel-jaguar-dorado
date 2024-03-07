@@ -14,7 +14,7 @@ const Header = () => {
     typeSpeed: 100
   })  
   return (
-    <header className='header'>
+    <header className='header' id='home'>
         <div className='brand'>
             <div className='hotel-logo'>
                 <FaCrown />

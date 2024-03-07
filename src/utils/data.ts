@@ -99,25 +99,58 @@ export const rooms_data = [
     }
 ]
 
-// import client1 from '../assets/customer-1.jpeg'
-// import client2 from '../assets/customer-2.jpeg'
+import client_image_1 from '@/../public/images/customer-1.jpg'
+import client_image_2 from '@/../public/images/customer-2.jpg'
+import client_image_3 from '@/../public/images/customer-3.jpg'
+import client_image_4 from '@/../public/images/customer-4.jpg'
+import client_image_5 from '@/../public/images/customer-5.jpg'
+import client_image_6 from '@/../public/images/customer-6.jpg'
 
-// const customers = [
-//     {
-//         id: 1,
-//         name: 'María Gonzales',
-//         quote: 'Es un lugar agradable, me encanta la comida y el ambiente! El personal es muy amable y siempre está dispuesto a ayudar.',
-//         job: 'Cliente',
-//         avatar: client1
-//     },
-//     {
-//         id: 2,
-//         name: 'Carlos Pérez',
-//         quote: 'El mejor lugar para descansar y disfrutar de la naturaleza. La comida es deliciosa y el personal es muy amable.',
-//         job: 'Turista Extranjero',
-//         avatar: client2
-//     }
-// ]
+export const customers_data: Customer[] = [
+    {
+        id: 1,
+        image: client_image_1,
+        comment: 'El mejor hotel en el que he estado. La comida es deliciosa y el servicio es excelente.',
+        name: 'Ana López',
+        rating: 5
+    },
+    {
+        id: 2,
+        image: client_image_2,
+        comment: 'Excelente servicio al cliente y habitaciones muy cómodas. ¡Volveré sin duda!',
+        name: 'Elena Martínez',
+        rating: 4
+    },
+    {
+        id: 3,
+        image: client_image_3,
+        comment: 'Una experiencia increíble. El personal es muy amable y las instalaciones son de primera.',
+        name: 'Sofía Smith',
+        rating: 5
+    },
+    {
+        id: 4,
+        image: client_image_4,
+        comment: 'Muy buena ubicación y vistas espectaculares. Recomendado para unas vacaciones relajantes.',
+        name: 'Elmer García',
+        rating: 4
+    },
+    {
+        id: 5,
+        image: client_image_5,
+        comment: 'El hotel cuenta con todas las comodidades necesarias para una estadía placentera. ¡Volveré pronto!',
+        name: 'Emilio Sanchez',
+        rating: 5
+    },
+    {
+        id: 6,
+        image: client_image_6,
+        comment: 'El servicio es excelente y el personal es muy amable. ¡Muy recomendado!',
+        name: 'Jane Doe',
+        rating: 4
+    }
+];
+
 
 // const footer_contact = [
 //     {
