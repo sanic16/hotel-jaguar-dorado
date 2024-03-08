@@ -11,7 +11,7 @@ const Header = () => {
     words: [hotelName, 'mejor hotel'],
     loop: 0,
     deleteSpeed: 50,
-    typeSpeed: 100
+    typeSpeed: 100,
   })  
   return (
     <header className='header' id='home'>

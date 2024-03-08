@@ -75,3 +75,15 @@
     font-size: 1.5rem;
     color: white;
 }
+
+@media screen and (max-width:1300px){
+    .social-link{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .sidebar{
+        padding-block: 2.5rem;
+    }
+}

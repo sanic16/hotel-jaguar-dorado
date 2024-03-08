@@ -15,8 +15,9 @@
   --black-color: hsl(var(--primary-hue), 5%, var(--black-lightness));
   --light-fixed-color: hsl(var(--primary-hue), 5%, var(--light-lightness));
 
-  --container-width-lg: 90%;
-  --container-width-md: 95%;
+
+  --container-width-lg: 85%;
+  --container-width-md: 92%;
 
   --border-radius-1: 1.2rem;
   --border-radius-2: 0.8rem;
@@ -24,6 +25,8 @@
 
   --transition-1: all 300ms ease;
   --transition-2: all 500ms ease;
+
+  
 }
 
 *,
@@ -75,4 +78,22 @@ main{
 section{
   padding: 10rem 0;
   transition: var(--transition);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+
+@media screen and (max-width: 1024px){
+  .container{
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (max-width: 750px){
+  section{
+    padding: 8rem 0;
+  }
+
+
 }

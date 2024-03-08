@@ -9,8 +9,9 @@ import './rooms.css'
 const Rooms = () => {
   return (
     <section className='rooms' id='rooms'>
+        <Heading title='Nuestras Habitaciones' />
+
         <div className='container rooms__wrapper'>
-            <Heading title='Nuestras Habitaciones' />
             <div className='rooms__cards-wrapper'>
                 {
                     rooms_data.map(room => (

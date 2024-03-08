@@ -4,10 +4,12 @@
 }
 
 .events__wrapper{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-auto-rows: 1fr;
     gap: 5rem;
-    place-content: center;
+    justify-items: center;
 }
 
 .event{
@@ -81,4 +83,42 @@
 
 .card__btn.event__btn:active{
     transform: translateY(-2px);
+}
+
+@media screen and (max-width: 800px){
+    .event{
+        max-width: 50rem;
+    }
+
+    .events__wrapper{
+        gap: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .event{
+        max-width: 40rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .events__wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .events__wrapper{
+        font-size: 2.5rem;
+    }
+
+    .event__info h4 {
+        font-size: 2.5rem;
+    }
+
+    .event__info p:nth-child(2){
+        font-size: 1.4rem;
+    }
+
+    
 }

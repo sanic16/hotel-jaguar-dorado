@@ -3,11 +3,11 @@
     margin-left: 8rem;
 }
 
-.rooms__cards-wrapper{
-   
+.rooms__cards-wrapper{  
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-auto-rows: 1fr;
     gap: 5rem;
     justify-items: center;
 }
@@ -15,12 +15,12 @@
 .room__card{
     max-width: 60rem;
     width: 100%;
-    margin: 5rem;
     background-color: var(--dark-color);
     box-shadow: 0rem 2rem 2rem hsla(var(--primary-hue), 5%, var(--light-lightness), .3);
 }
 
 .room__image img{
+    width: 100%;
     aspect-ratio: 3/2;
 }
 
@@ -45,58 +45,12 @@
     text-align: right;
 }
 
-.room__card-btn{
-    cursor: pointer;
-    width: 20rem;
-    padding: 1rem .5rem;
-    background-color: transparent;
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    border: .1rem solid var(--primary-color);
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: all 500ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    border-radius: 10rem;
-}
-
-.room__card-btn:before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary-color);
-    transform: translateX(-100%);
-    transition: all 500ms;
-    z-index: -1;
-}
-
-.room__card-btn:hover::before{
-    transform: translateX(0);
-}
-
-.room__card-btn:hover{
-    color: var(--dark-color);
-}
-
-.room__card-btn:active svg  {
-    margin-left: 1rem;
-}
-
 .rooms__btn-wrapper{
     text-align: center;
 }
 
 .rooms__btn{
-    margin-top: 4rem;
+    margin-top: 8rem;
     background-color: transparent;
     display: inline-block;
     border: none;
@@ -192,11 +146,42 @@
     transform: translateY(.2rem);
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 800px){
+    .rooms__cards-wrapper{
+        gap: 3.5rem;
+    }
     .room__card{
         max-width: 50rem;
     }
+}
+
+@media screen and (max-width: 700px){
+    .room__card{
+        max-width: 40rem;
+    }
+}
+
+@media screen and (max-width: 600px){
     .rooms__cards-wrapper{
-        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .room__card-heading{
+        font-size: 2.5rem;
+    }
+
+    .room__card-price{
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .room__card-text{
+        font-size: 1.4rem;
+    }
+
+    .rooms__btn{
+        margin-top: 5rem;
     }
 }

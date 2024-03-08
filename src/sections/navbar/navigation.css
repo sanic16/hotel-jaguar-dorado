@@ -127,3 +127,12 @@
     font-size: 1.2rem;
 }
 
+@media screen and (max-width: 500px){
+    .navigation{
+        width: 28rem;
+        padding-block: 2.5rem;
+    }
+    .navigation-search-input{
+        width: 20rem;
+    }
+}

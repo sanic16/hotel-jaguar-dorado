@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10rem;
+    justify-items: center;
 }
 
 .customers__left{
@@ -135,9 +136,7 @@
     .customers__wrapper{
         gap: 3rem;
     }
-}
 
-@media screen and (max-width: 950px){
     .customers__wrapper{
         grid-template-columns: 1fr;
         gap: 5rem;
@@ -146,10 +145,37 @@
     .customers__right{
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
+
 
 @media screen and (max-width: 750px){
     .customers__right{
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .customers__left p{
+        max-width: 90%;
+        margin-inline: auto;
+    }
+
+    .customers__left a{
+        padding: 1.5rem 4rem;
+    }
+
+    .customer__comment h5{
+        font-size: 1.1rem;
+    }
+
+    .customer__comment p{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .customers__left a{
+        padding: 1.2rem 3rem;
     }
 }

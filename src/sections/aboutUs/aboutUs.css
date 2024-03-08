@@ -32,6 +32,7 @@
     letter-spacing: .2rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .aboutUs__text{
@@ -87,7 +88,7 @@
     top: 50%;
     left: 50%;
     width: 32rem;
-    height: 20rem;
+    aspect-ratio: 16/9;
     position: absolute;
     box-shadow: 0 3rem 6rem hsla(var(--primary-hue), 5%, var(--light-lightness), .4);
     border-radius: .4rem;
@@ -108,4 +109,65 @@
 
 .aboutUs__images .image-4{
     transform: translate(-30%, -30%);
+}
+
+@media screen and (max-width:1200px){
+    .aboutUs__wrapper{
+        flex-direction: column;
+        padding-bottom: 20rem;
+    }
+    .aboutUs__content{
+        margin-bottom: 15rem;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .aboutUs .image{
+        width: 25rem;
+    }
+
+    .aboutUs__text{
+        max-width: 80%;
+    }
+
+    .aboutUs__subHeading{
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .aboutUs .image{
+        width: 20rem;
+    }
+
+    .aboutUs__wrapper{
+        padding-bottom: 10rem;
+    }
+
+    .aboutUs__content{
+        margin-bottom: 10rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .aboutUs .image{
+        width: 15rem;
+    }
+
+    .aboutUs__wrapper{
+        padding-bottom: 5rem;
+    }
+
+    .aboutUs__content{
+        margin-bottom: 7rem;
+    }
+
+    .aboutUs__subHeading{
+        font-size: 2.2rem;
+    }
+
+    .aboutUs__text{
+        max-width: 90%;
+    }
 }
