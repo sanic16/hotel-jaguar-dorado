@@ -14,3 +14,8 @@ type Customer = {
     name: string,
     rating: number
 }
+
+type GalleryImage = {
+    id: number,
+    image: NextImage,
+}

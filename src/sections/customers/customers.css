@@ -7,7 +7,7 @@
 .customers__wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10rem;
+    gap: 6rem;
     justify-items: center;
 }
 

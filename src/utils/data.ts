@@ -33,32 +33,32 @@ export const navigation_data = [
     {
         id: 1,
         text: "Inicio",
-        url: "#home"
+        url: "/#home"
     },
     {
         id: 2,
         text: "Nosotros",
-        url: "#about"
+        url: "/#about"
     },
     {
         id: 3,
         text: "Habitaciones",
-        url: "#rooms"
+        url: "/#rooms"
     },
     {
         id: 4,
         text: "Clientes",
-        url: "#customers"
+        url: "/#customers"
     },
     {
         id: 5,
         text: "Eventos",
-        url: "#events"
+        url: "/#events"
     },
     {
         id: 6,
         text: "Contacto",
-        url: "#contact"
+        url: "/#footer"
     }
 
 ]
@@ -174,14 +174,14 @@ export const events_data = [
     },
     {
         id: 3,
-        title: 'Boda de María y Juan',
+        title: 'Concierto de Marimba',
         date: '15 de Noviembre',
         description: 'Los invitados a la boda de María y Juan podrán disfrutar de una noche de lujo y diversión.',
         image: event_image_3
     },
     {
         id: 4,
-        title: 'Concierto de Marimba',
+        title: 'Boda de María y Juan',
         date: '20 de Noviembre',
         description: 'La mejor marimba de Guatemala se presentará en nuestro hotel. ¡No te lo pierdas!',
         image: event_image_4

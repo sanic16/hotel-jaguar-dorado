@@ -47,6 +47,11 @@ html{
 body{
   font-family: 'Montserrat', sans-serif;
   color: var(--light-color);
+  font-size: 1.6rem;
+}
+
+body.modal-open{
+  overflow: hidden;
 }
 
 ul{
@@ -60,7 +65,7 @@ a{
 
 img{
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
@@ -81,6 +86,16 @@ section{
   min-height: 100vh;
   display: grid;
   place-items: center;
+}
+
+.page__title{
+  font-size: 4rem;
+  background: linear-gradient(90deg, orangered, var(--secondary-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 

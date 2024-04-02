@@ -6,11 +6,12 @@ import './footer.css'
 import { FaCss3, FaReact } from 'react-icons/fa'
 import { TbBrandNextjs } from 'react-icons/tb'
 import { GrHeroku } from 'react-icons/gr'
+import ImageGallery from './ImageGallery'
 
 
 const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer className='footer' id='footer'>
         <div className='container main__part'>
             <div className='footer__list-wrapper'>
                 <h3 className='footer__heading'>
@@ -57,15 +58,9 @@ const Footer = () => {
                 <h3 className='footer__heading'>
                     Galería
                 </h3>
-                <div className='gallery__images'>
-                    {
-                        footer_images.map(item => (
-                            <div className='image__wrapper' key={item.id}>
-                                <Image src={item.image} alt='gallery image' className='footer__image'/>
-                            </div>
-                        ))
-                    }
-                </div>
+               <ImageGallery
+                    images={footer_images}
+                />
             </div>
         </div>
         <div className='container footer__creator'>
@@ -76,8 +71,6 @@ const Footer = () => {
             </div>
             <div className='creator'>
                 <p> Diseñado por <a href="#">Julio Sanic</a> con </p> <TbBrandNextjs /> <FaReact /> <FaCss3/> <GrHeroku />
-                    
-                
             </div>
         </div>
     </footer>

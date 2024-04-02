@@ -6,6 +6,7 @@ import { FaSearch } from 'react-icons/fa'
 import { navigation_data } from '@/utils/data'
 import './navigation.css'
 import useNavigationContext from '@/context/navigation-context'
+import Link from 'next/link'
 
 const Navigation = () => {
   const { isOpen, toggle } = useNavigationContext()  
@@ -41,9 +42,9 @@ const Navigation = () => {
             {
                 navigation_data.map(item => (
                     <li key={item.id} className='navigation-item'>
-                        <a href={item.url} className='navigation-link' onClick={toggle}>
+                        <Link href={item.url} className='navigation-link' onClick={toggle}>
                             { item.text }
-                        </a>
+                        </Link>
                     </li>
                 ))
             }

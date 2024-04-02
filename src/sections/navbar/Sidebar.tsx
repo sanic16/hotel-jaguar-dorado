@@ -1,15 +1,16 @@
 'use client'
 import React from 'react'
 import { social_data } from '@/utils/data'
-
 import './sidebar.css'
 import Navigation from './Navigation'
 import useNavigationContext from '@/context/navigation-context'
 import { AnimatePresence } from 'framer-motion'
-import Modal from '@/components/modal/Modal'
 
 const Sidebar = () => {
-  const { isOpen, toggle } = useNavigationContext()  
+  const { isOpen, toggle } = useNavigationContext()
+  if(typeof window !== 'undefined'){ 
+    isOpen ? window.document.body.classList.add('modal-open') : window.document.body.classList.remove('modal-open') 
+  } 
   return (
     <div className='navbar'>
         <div className='sidebar'> 

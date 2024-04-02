@@ -9,7 +9,6 @@
 
 .aboutUs__wrapper{
     display: flex;
-    /* background-color: red; */
 }
 
 .aboutUs__content{
@@ -84,30 +83,32 @@
     position: relative;
 }
 
-.aboutUs__images .image{
-    top: 50%;
-    left: 50%;
+.aboutUs__image-wrapper{
+    position: absolute;
     width: 32rem;
     aspect-ratio: 16/9;
-    position: absolute;
+    top: 50%;
+    left: 50%;
     box-shadow: 0 3rem 6rem hsla(var(--primary-hue), 5%, var(--light-lightness), .4);
     border-radius: .4rem;
     border: .2rem solid var(--primary-color);
+    overflow: hidden;
 }
 
-.aboutUs__images .image-3{
+
+.aboutUs__images .about__img1{
     transform: translate(-50%, -50%);
 }
 
-.aboutUs__images .image-1{
+.aboutUs__images .about__img2{
     transform: translate(-20%, -90%);
 }
 
-.aboutUs__images .image-2{
+.aboutUs__images .about__img3{
     transform: translate(-70%, -70%);
 }
 
-.aboutUs__images .image-4{
+.aboutUs__images .about__img4{
     transform: translate(-30%, -30%);
 }
 
@@ -123,7 +124,7 @@
 }
 
 @media screen and (max-width: 800px){
-    .aboutUs .image{
+    .aboutUs__image-wrapper{
         width: 25rem;
     }
 
@@ -137,7 +138,7 @@
 }
 
 @media screen and (max-width: 600px){
-    .aboutUs .image{
+    .aboutUs__image-wrapper{
         width: 20rem;
     }
 
@@ -151,7 +152,7 @@
 }
 
 @media screen and (max-width: 500px){
-    .aboutUs .image{
+    .aboutUs__image-wrapper{
         width: 15rem;
     }
 
